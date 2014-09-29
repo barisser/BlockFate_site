@@ -1,6 +1,6 @@
 from flask import *
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 app.config['PROPAGATE_EXCEPTIONS']=True
 
 @app.route('/', methods=['GET'])
