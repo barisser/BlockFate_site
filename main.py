@@ -7,6 +7,9 @@ app.config['PROPAGATE_EXCEPTIONS']=True
 def home():
   return app.send_static_file('index.html')
 
+@app.route('/whitepaper', methods=['GET'])
+def whitepper():
+  return app.send_static_file('blockfate.pdf')
 
 
 if __name__ == '__main__':
